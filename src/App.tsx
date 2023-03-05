@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { DarkModeButton } from './ui/DarkModeButton';
-import { GitHubIconLink } from './ui/GitHubIconLink';
+// import { DarkModeButton } from './ui/DarkModeButton';
+// import { GitHubIconLink } from './ui/GitHubIconLink';
 import { globalCss, styled } from './stitches.config';
 import { Home } from './components/Home';
 import { ExampleComponent } from './components/ExampleComponent';
@@ -12,20 +12,43 @@ import { Breadcrumbs } from './components/Breadcrumbs';
 import { Info } from './components/Info';
 
 const AppContainer = styled('div', {
-  maxWidth: '540px',
+  // display: 'grid',
+  // gridColumns: '',
+  // gridRows: '',
+  maxWidth: '60%',
   padding: '12px 15px 25px',
   margin: '0 auto',
 });
 
 const HeaderContainer = styled('header', {
-  display: 'flex',
+  // display: 'flex',
   justifyContent: 'space-between',
   marginBottom: '18px',
+  // background: '$backgroundContrast',
+  textAlign: 'center',
+  alignItems: 'center',
 });
 
 const H1 = styled('h1', {
-  fontSize: '26px',
-  marginRight: '16px',
+  fontSize: '5em',
+  // marginRight: '16px',
+  fontFamily: 'Josefin Sans',
+});
+
+const H2 = styled('h2', {
+  fontSize: '2em',
+  // marginRight: '16px',
+  fontFamily: 'Josefin Sans',
+  fontWeight: '300',
+});
+
+const HR = styled('hr', {
+  backgroundColor: 'black',
+  height: '2px',
+  marginLeft: '15%',
+  marginRight: '15%',
+  marginTop: '1%',
+  marginBottom: '2%',
 });
 
 const HeaderIconContainer = styled('span', {
@@ -45,14 +68,10 @@ export const App: React.VFC = () => {
   return (
     <AppContainer>
       <HeaderContainer>
-        <H1>Single Page Apps for GitHub Pages</H1>
-        <HeaderIconContainer>
-          <DarkModeButton />
-          <GitHubIconLink
-            href="https://github.com/rafgraph/spa-github-pages"
-            title="GitHub repository for SPA GitHub Pages"
-          />
-        </HeaderIconContainer>
+        <H1>JESSICA JACOBSON</H1>
+        <HR></HR>
+        <H2>SÅNGPEDAGOG</H2>
+        <HeaderIconContainer>{/* <DarkModeButton /> */}</HeaderIconContainer>
       </HeaderContainer>
 
       <BreadcrumbsNav>

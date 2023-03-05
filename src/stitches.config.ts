@@ -91,8 +91,9 @@ export const globalCss = createGlobalCss({
     minHeight: '100%',
     backgroundColor: '$pageBackground',
     backgroundImage: 'url("/img/bkg.png")',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
+    // backgroundPosition: 'center',
+    // backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+    paddingTop: '5%',
   },
 });
