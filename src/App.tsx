@@ -14,6 +14,7 @@ import { Menu } from './components/Menu';
 import { OmMig } from './components/OmMig';
 import { Tjanster } from './components/Tjanster';
 import { Kontakt } from './components/Kontakt';
+import { H1, H2, P } from './ui/TextStyles';
 
 const AppContainer = styled('div', {
   // display: 'grid',
@@ -34,18 +35,18 @@ const HeaderContainer = styled('header', {
   alignItems: 'center',
 });
 
-const H1 = styled('h1', {
-  fontSize: '5em',
-  // marginRight: '16px',
-  fontFamily: 'Josefin Sans',
-});
+// const H1 = styled('h1', {
+//   fontSize: '5em',
+//   // marginRight: '16px',
+//   fontFamily: 'Josefin Sans',
+// });
 
-const H2 = styled('h2', {
-  fontSize: '2em',
-  // marginRight: '16px',
-  fontFamily: 'Josefin Sans',
-  fontWeight: '300',
-});
+// const H2 = styled('h2', {
+//   fontSize: '2em',
+//   // marginRight: '16px',
+//   fontFamily: 'Josefin Sans',
+//   fontWeight: '300',
+// });
 
 const HR = styled('hr', {
   backgroundColor: 'black',
@@ -70,10 +71,9 @@ const HeaderIconContainer = styled('span', {
 // });
 
 const MenuNav = styled('nav', {
-  // margin: '18px 0',
   background: '#c8def4ab',
-  // padding: '0.5em'
   justifyContent: 'space-between',
+  marginBottom: '2%',
 });
 
 const ContentContainer = styled('div', {
