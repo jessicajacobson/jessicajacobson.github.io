@@ -29,10 +29,10 @@ export const InteractiveLink = styled(LinkUnion, {
 
   // can't use shorthand for textDecoration because of bug in Safari v14
   // textDecoration: 'underline $colors$green dotted from-font',
-  textDecorationLine: 'underline',
-  textDecorationStyle: 'dotted',
-  textDecorationColor: '$green',
-  textDecorationThickness: 'from-font',
+  // textDecorationLine: 'underline',
+  // textDecorationStyle: 'dotted',
+  // textDecorationColor: '$green',
+  // textDecorationThickness: 'from-font',
 
   // padding used to provide offset for boxShadow used in focus styles
   // margin undoes padding for page layout so boxShadow works like outline
@@ -44,15 +44,20 @@ export const InteractiveLink = styled(LinkUnion, {
   borderRadius: '3px',
 
   '&.hover, &.mouseActive': {
-    textDecorationColor: '$green',
-    textDecorationStyle: 'solid',
+    // textDecorationColor: '$green',
+    // textDecorationStyle: 'solid',
+    color: '#E996AC',
   },
   '&.touchActive, &.keyActive': {
-    color: '$green',
-    textDecorationColor: '$green',
-    textDecorationStyle: 'solid',
+    // color: '$green',
+    // textDecorationColor: '$green',
+    // textDecorationStyle: 'solid',
+    color: '#E996AC',
   },
   '&.focusFromKey': {
     boxShadow: '0 0 0 2px $colors$purple',
+  },
+  ':focus': {
+    color: 'white',
   },
 });

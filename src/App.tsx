@@ -9,21 +9,26 @@ import { ExampleTwoDeepComponent } from './components/ExampleTwoDeepComponent';
 import { SitemapLinkGenerator } from './components/SitemapLinkGenerator';
 import { PageNotFound } from './components/PageNotFound';
 import { Breadcrumbs } from './components/Breadcrumbs';
-import { Info } from './components/Info';
+// import { Info } from './components/Info';
+import { Menu } from './components/Menu';
+import { OmMig } from './components/OmMig';
+import { Tjanster } from './components/Tjanster';
+import { Kontakt } from './components/Kontakt';
 
 const AppContainer = styled('div', {
   // display: 'grid',
   // gridColumns: '',
   // gridRows: '',
-  maxWidth: '60%',
-  padding: '12px 15px 25px',
+  // maxWidth: '60%',
+  // padding: '12px 15px 25px',
   margin: '0 auto',
+  alignItems: 'center',
 });
 
 const HeaderContainer = styled('header', {
   // display: 'flex',
   justifyContent: 'space-between',
-  marginBottom: '18px',
+  // marginBottom: '18px',
   // background: '$backgroundContrast',
   textAlign: 'center',
   alignItems: 'center',
@@ -58,8 +63,23 @@ const HeaderIconContainer = styled('span', {
   gap: '12px',
 });
 
-const BreadcrumbsNav = styled('nav', {
-  margin: '18px 0',
+// const BreadcrumbsNav = styled('nav', {
+//   // margin: '18px 0',
+//   background: '#c8def4ab',
+//   padding: '0.5em'
+// });
+
+const MenuNav = styled('nav', {
+  // margin: '18px 0',
+  background: '#c8def4ab',
+  // padding: '0.5em'
+  justifyContent: 'space-between',
+});
+
+const ContentContainer = styled('div', {
+  maxWidth: '60%',
+  marginLeft: 'auto',
+  marginRight: 'auto',
 });
 
 export const App: React.VFC = () => {
@@ -74,14 +94,20 @@ export const App: React.VFC = () => {
         <HeaderIconContainer>{/* <DarkModeButton /> */}</HeaderIconContainer>
       </HeaderContainer>
 
-      <BreadcrumbsNav>
+      {/* <BreadcrumbsNav>
         <Breadcrumbs />
-      </BreadcrumbsNav>
-
-      <Switch>
-        <Route exact path="/info" component={Info} />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/example" component={ExampleComponent} />
+      </BreadcrumbsNav> */}
+      <MenuNav>
+        <Menu />
+      </MenuNav>
+      <ContentContainer>
+        <Switch>
+          <Route exact path="/ommig" component={OmMig} />
+          {/* <Route exact path="/info" component={Info} /> */}
+          <Route exact path="/" component={Home} />
+          <Route exact path="/tjanster" component={Tjanster} />
+          <Route exact path="/kontakt" component={Kontakt} />
+          {/* <Route exact path="/example" component={ExampleComponent} />
         <Route
           exact
           path="/example/two-deep"
@@ -91,9 +117,10 @@ export const App: React.VFC = () => {
           exact
           path="/sitemap-link-generator"
           component={SitemapLinkGenerator}
-        />
-        <Route component={PageNotFound} />
-      </Switch>
+        /> */}
+          <Route component={PageNotFound} />
+        </Switch>
+      </ContentContainer>
     </AppContainer>
   );
 };

@@ -1,0 +1,12 @@
+<form 
+        onSubmit={(e: React.SyntheticEvent) => {
+            e.preventDefault();
+         }} 
+         action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="0d6a1674-9ddd-4feb-9d60-fe2e9d60c651" />
+            {/* <label htmlFor="">Epost</label>
+            <input type="email" placeholder='E-postadress' /> */}
+            <label htmlFor="">Meddelande</label>
+            <input type="text" placeholder='Meddelande' />
+            <button type="submit">Send contact</button>
+          </form>
