@@ -61,3 +61,7 @@ export const InteractiveLink = styled(LinkUnion, {
     color: 'white',
   },
 });
+
+export const HomeLink = styled(LinkUnion, {
+  color: '$highContrast',
+});

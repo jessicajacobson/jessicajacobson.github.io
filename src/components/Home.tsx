@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { InteractiveLink } from '../ui/InteractiveLink';
-import { P } from '../ui/Paragraph';
+import { P, H2 } from '../ui/TextStyles';
 import { styled } from '../stitches.config';
 
 const LinkContainer = styled('span', {
@@ -14,33 +14,33 @@ const RepoReadmeLink: React.VFC = () => (
   </InteractiveLink>
 );
 
+const SingingImg = styled('img', {
+  maxWidth: '100%',
+});
+
 export const Home: React.VFC = () => (
   <div>
+    <H2> Vill du lära dig att sjunga? Välkommen på sånglektion!</H2>
+    <SingingImg
+      src="img/singers2.jpg"
+      alt="Image by <a href='https://pixabay.com/users/stocksnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2606347'>StockSnap</a> from <a href='https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2606347'>Pixabay</a>"
+    ></SingingImg>
     <P>
-      This is an example single page app built with React and React&nbsp;Router
-      using <code>BrowserRouter</code>. Navigate with the links below and
-      refresh the page or copy/paste the url to test out the redirect
-      functionality deployed to overcome GitHub&nbsp;Pages incompatibility with
-      single page apps (like this one).
-    </P>
-    <P>
-      Please see the <RepoReadmeLink /> for instructions on how to use this
-      boilerplate to deploy your own single page app using GitHub Pages.
-    </P>
-    <P>
-      <LinkContainer>
-        <InteractiveLink to="/example">Example page</InteractiveLink>
-      </LinkContainer>
-      <LinkContainer>
-        <InteractiveLink to="/example/two-deep?field1=foo&field2=bar#boom!">
-          Example two deep with query and hash
-        </InteractiveLink>
-      </LinkContainer>
-    </P>
-    <P>
-      <InteractiveLink to="/sitemap-link-generator">
-        Sitemap Link Generator
-      </InteractiveLink>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Eu sem integer vitae
+      justo. Rhoncus mattis rhoncus urna neque viverra justo. Tempus egestas sed
+      sed risus pretium. Quis vel eros donec ac. Facilisis leo vel fringilla
+      est. In dictum non consectetur a. Nunc lobortis mattis aliquam faucibus.
+      Rhoncus mattis rhoncus urna neque viverra. Mattis rhoncus urna neque
+      viverra justo nec ultrices dui. Et tortor at risus viverra adipiscing at
+      in tellus integer. Suspendisse faucibus interdum posuere lorem ipsum dolor
+      sit amet. Aliquam sem et tortor consequat id porta. Egestas egestas
+      fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.
+      Elit duis tristique sollicitudin nibh sit amet. Risus nec feugiat in
+      fermentum posuere urna nec tincidunt. Non nisi est sit amet facilisis.
+      Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac.
+      Massa sapien faucibus et molestie ac feugiat sed lectus. Euismod in
+      pellentesque massa placerat duis ultricies lacus.
     </P>
   </div>
 );

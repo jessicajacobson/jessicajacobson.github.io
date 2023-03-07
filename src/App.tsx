@@ -15,6 +15,7 @@ import { OmMig } from './components/OmMig';
 import { Tjanster } from './components/Tjanster';
 import { Kontakt } from './components/Kontakt';
 import { H1, H2, P } from './ui/TextStyles';
+import { InteractiveLink, HomeLink } from './ui/InteractiveLink';
 
 const AppContainer = styled('div', {
   // display: 'grid',
@@ -88,7 +89,10 @@ export const App: React.VFC = () => {
   return (
     <AppContainer>
       <HeaderContainer>
-        <H1>JESSICA JACOBSON</H1>
+        <HomeLink to="/">
+          <H1>JESSICA JACOBSON</H1>
+        </HomeLink>
+
         <HR></HR>
         <H2>SÅNGPEDAGOG</H2>
         <HeaderIconContainer>{/* <DarkModeButton /> */}</HeaderIconContainer>

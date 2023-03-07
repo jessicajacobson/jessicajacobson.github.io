@@ -94,6 +94,6 @@ export const globalCss = createGlobalCss({
     // backgroundPosition: 'center',
     // backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
-    paddingTop: '5%',
+    paddingTop: '3%',
   },
 });

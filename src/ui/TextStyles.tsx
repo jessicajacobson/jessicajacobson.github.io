@@ -15,4 +15,6 @@ export const H2 = styled('h2', {
   fontSize: '2em',
   fontFamily: 'Josefin Sans',
   fontWeight: '300',
+  textAlign: 'center',
+  marginBottom: '1%',
 });
