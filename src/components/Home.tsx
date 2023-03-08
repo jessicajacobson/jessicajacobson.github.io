@@ -3,19 +3,23 @@ import { InteractiveLink } from '../ui/InteractiveLink';
 import { P, H2 } from '../ui/TextStyles';
 import { styled } from '../stitches.config';
 
-const LinkContainer = styled('span', {
-  display: 'block',
-  margin: '8px 0',
-});
+// const LinkContainer = styled('span', {
+//   display: 'block',
+//   margin: '8px 0',
+// });
 
-const RepoReadmeLink: React.VFC = () => (
-  <InteractiveLink href="https://github.com/rafgraph/spa-github-pages#readme">
-    repo readme
-  </InteractiveLink>
-);
+// const RepoReadmeLink: React.VFC = () => (
+//   <InteractiveLink href="https://github.com/rafgraph/spa-github-pages#readme">
+//     repo readme
+//   </InteractiveLink>
+// );
 
 const SingingImg = styled('img', {
   maxWidth: '100%',
+
+  // '&:hover': {
+  //   display: 'none',
+  // }
 });
 
 export const Home: React.VFC = () => (

@@ -2,6 +2,12 @@ import { createCss, StitchesCss } from '@stitches/react';
 // import img from 'jessicajacobson.github.io/img/bkg.png';
 
 export const stitchesConfig = createCss({
+  media: {
+    bp1: '(min-width: 1px)',
+    bp2: '(min-width: 640px)',
+    bp3: '(min-width: 768px)',
+    bp4: '(min-width: 1024px)',
+  },
   theme: {
     colors: {
       pageBackground: 'rgb(240,240,240)', // bakgrundsfärg
