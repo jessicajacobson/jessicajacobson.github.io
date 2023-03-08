@@ -7,12 +7,12 @@ export const P = styled('p', {
 });
 
 export const H1 = styled('h1', {
-  fontSize: '5em',
+  fontSize: '340%',
   fontFamily: 'Josefin Sans',
 });
 
 export const H2 = styled('h2', {
-  fontSize: '2em',
+  fontSize: '1.7em',
   fontFamily: 'Josefin Sans',
   fontWeight: '300',
   textAlign: 'center',

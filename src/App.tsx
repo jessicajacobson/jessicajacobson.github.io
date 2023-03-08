@@ -16,6 +16,7 @@ import { Tjanster } from './components/Tjanster';
 import { Kontakt } from './components/Kontakt';
 import { H1, H2, P } from './ui/TextStyles';
 import { InteractiveLink, HomeLink } from './ui/InteractiveLink';
+import { EnvelopeClosedIcon } from '@radix-ui/react-icons';
 
 const AppContainer = styled('div', {
   // display: 'grid',
@@ -25,6 +26,9 @@ const AppContainer = styled('div', {
   // padding: '12px 15px 25px',
   margin: '0 auto',
   alignItems: 'center',
+  display: 'flex',
+  flexDirection: 'column',
+  minHeight: '100vh',
 });
 
 const HeaderContainer = styled('header', {
@@ -52,10 +56,10 @@ const HeaderContainer = styled('header', {
 const HR = styled('hr', {
   backgroundColor: 'black',
   height: '2px',
-  marginLeft: '15%',
-  marginRight: '15%',
+  marginLeft: '25%',
+  marginRight: '25%',
   marginTop: '1%',
-  marginBottom: '2%',
+  marginBottom: '1.2%',
 });
 
 const HeaderIconContainer = styled('span', {
@@ -73,14 +77,29 @@ const HeaderIconContainer = styled('span', {
 
 const MenuNav = styled('nav', {
   background: '#c8def4ab',
-  justifyContent: 'space-between',
   marginBottom: '2%',
+  width: '100%',
 });
 
 const ContentContainer = styled('div', {
   maxWidth: '60%',
   marginLeft: 'auto',
   marginRight: 'auto',
+});
+
+const Footer = styled('footer', {
+  background: '#c8def4ab',
+  height: '10%',
+  marginTop: 'auto',
+  width: '100%',
+  paddingLeft: '5%',
+  paddingRight: '5%',
+  // display: 'grid',
+  // gridAutoColumns: ''
+});
+
+const MailIcon = styled(EnvelopeClosedIcon, {
+  boxShadow: '3px 3px',
 });
 
 export const App: React.VFC = () => {
@@ -125,6 +144,14 @@ export const App: React.VFC = () => {
           <Route component={PageNotFound} />
         </Switch>
       </ContentContainer>
+      <Footer>
+        <P>
+          {/* <MailIcon viewBox="0 0 100 100"></MailIcon>  */}
+          jessicajmusik@gmail.com
+        </P>
+        <P>www.jessicajacobson.github.io</P>
+        <P>Örebro</P>
+      </Footer>
     </AppContainer>
   );
 };
