@@ -17,4 +17,14 @@ export const H2 = styled('h2', {
   fontWeight: '300',
   textAlign: 'center',
   marginBottom: '1%',
+  marginTop: '1%',
+});
+
+export const HR = styled('hr', {
+  backgroundColor: 'black',
+  height: '2px',
+  marginLeft: '25%',
+  marginRight: '25%',
+  marginTop: '1%',
+  marginBottom: '1.2%',
 });

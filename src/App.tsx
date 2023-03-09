@@ -14,7 +14,7 @@ import { Menu } from './components/Menu';
 import { OmMig } from './components/OmMig';
 import { Tjanster } from './components/Tjanster';
 import { Kontakt } from './components/Kontakt';
-import { H1, H2, P } from './ui/TextStyles';
+import { H1, H2, P, HR } from './ui/TextStyles';
 import { InteractiveLink, HomeLink } from './ui/InteractiveLink';
 import { EnvelopeClosedIcon } from '@radix-ui/react-icons';
 
@@ -52,15 +52,6 @@ const HeaderContainer = styled('header', {
 //   fontFamily: 'Josefin Sans',
 //   fontWeight: '300',
 // });
-
-const HR = styled('hr', {
-  backgroundColor: 'black',
-  height: '2px',
-  marginLeft: '25%',
-  marginRight: '25%',
-  marginTop: '1%',
-  marginBottom: '1.2%',
-});
 
 const HeaderIconContainer = styled('span', {
   width: '78px',
