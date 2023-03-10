@@ -1,12 +1,11 @@
 import { createCss, StitchesCss } from '@stitches/react';
-// import img from 'jessicajacobson.github.io/img/bkg.png';
 
 export const stitchesConfig = createCss({
   media: {
-    bp1: '(min-width: 1px)',
-    bp2: '(min-width: 640px)',
-    bp3: '(min-width: 768px)',
-    bp4: '(min-width: 1024px)',
+    bp4: '(max-width: 640px)',
+    bp3: '(max-width: 768px)',
+    bp2: '(max-width: 953px)',
+    bp1: '(min-width: 1024px)',
   },
   theme: {
     colors: {
@@ -96,10 +95,21 @@ export const globalCss = createGlobalCss({
   '#root': {
     minHeight: '100%',
     backgroundColor: '$pageBackground',
-    backgroundImage: 'url("/img/bkg.png")',
-    // backgroundPosition: 'center',
-    // backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    backgroundImage: 'url("/img/bkg/1.png"), url("/img/bkg/2.png")',
+    backgroundPosition: 'top left, top right',
+    backgroundRepeat: 'repeat-y, repeat-y',
+    // backgroundSize: 'contain',
     paddingTop: '3%',
+    backgroundSize: 'unset',
+
+    '@bp2': {
+      backgroundSize: '75%',
+    },
+    '@bp3': {
+      backgroundSize: '75%',
+    },
+    '@bp4': {
+      backgroundSize: '75%',
+    },
   },
 });

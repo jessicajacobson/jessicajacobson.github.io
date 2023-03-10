@@ -13,10 +13,9 @@ const TjanstBox = styled('div', {
   // display: 'flex',
   // marginTop: '%',
   // marginBottom: '2%',
-
-  '> img': {
-    width: '10%',
-  },
+  // '> img': {
+  //   width: '12%',
+  // },
 });
 
 const HR2 = styled('hr', {
@@ -31,11 +30,27 @@ const HR2 = styled('hr', {
 const TjanstImgLeft = styled('img', {
   margin: '2%',
   float: 'left',
+  width: '12%',
+
+  '@bp3': {
+    width: '15%',
+  },
+  '@bp4': {
+    width: '25%',
+  },
 });
 
 const TjanstImgRight = styled('img', {
   margin: '2%',
   float: 'right',
+  width: '12%',
+
+  '@bp3': {
+    width: '15%',
+  },
+  '@bp4': {
+    width: '25%',
+  },
 });
 
 export const Tjanster: React.VFC = () => (
@@ -77,6 +92,48 @@ export const Tjanster: React.VFC = () => (
         <P>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu sem
+          integer vitae justo. Rhoncus mattis rhoncus urna neque viverra justo.
+          Tempus egestas sed sed risus pretium. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Eu sem integer vitae justo. Rhoncus
+          mattis rhoncus urna neque viverra justo. Tempus egestas sed sed risus
+          pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu sem
+          integer vitae justo. Rhoncus mattis rhoncus urna neque viverra justo.
+          Tempus egestas sed sed risus pretium. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Eu sem integer vitae justo. Rhoncus
+          mattis rhoncus urna neque viverra justo. Tempus egestas sed sed risus
+          pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu sem
+          integer vitae justo. Rhoncus mattis rhoncus urna neque viverra justo.
+          Tempus egestas sed sed risus pretium. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Eu sem integer vitae justo. Rhoncus
+          mattis rhoncus urna neque viverra justo. Tempus egestas sed sed risus
+          pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu sem
+          integer vitae justo. Rhoncus mattis rhoncus urna neque viverra justo.
+          Tempus egestas sed sed risus pretium. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Eu sem integer vitae justo. Rhoncus
+          mattis rhoncus urna neque viverra justo. Tempus egestas sed sed risus
+          pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu sem
+          integer vitae justo. Rhoncus mattis rhoncus urna neque viverra justo.
+          Tempus egestas sed sed risus pretium. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Eu sem integer vitae justo. Rhoncus
+          mattis rhoncus urna neque viverra justo. Tempus egestas sed sed risus
+          pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu sem
+          integer vitae justo. Rhoncus mattis rhoncus urna neque viverra justo.
+          Tempus egestas sed sed risus pretium. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Eu sem integer vitae justo. Rhoncus
+          mattis rhoncus urna neque viverra justo. Tempus egestas sed sed risus
+          pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu sem
           integer vitae justo. Rhoncus mattis rhoncus urna neque viverra justo.
           Tempus egestas sed sed risus pretium. Lorem ipsum dolor sit amet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut

@@ -15,4 +15,7 @@ export const LI = styled('li', {
   display: 'inline-block',
   paddingLeft: '5%',
   paddingRight: '5%',
+  '@bp3': {
+    fontSize: '60%',
+  },
 });

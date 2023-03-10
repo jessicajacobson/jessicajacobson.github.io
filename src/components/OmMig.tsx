@@ -11,19 +11,28 @@ import { P } from '../ui/Paragraph';
 // })
 
 const CONTENT = styled('div', {
-  display: 'grid',
+  //   display: 'grid',
   gridAutoColumns: '50% 50%',
   gridAutoRows: '100%',
 });
 
 const JESSICABILD = styled('img', {
-  gridColumn: '2',
-  width: '85%',
+  //   gridColumn: '2',
+  margin: '0% 0% 5% 5%',
+  width: '40%',
+  float: 'right',
+  '@bp3': {
+    width: '60%',
+  },
+  '@bp4': {
+    width: '100%',
+  },
 });
 
 export const OmMig: React.VFC = () => (
   <CONTENT>
     <div>
+      <JESSICABILD src="/img/jessica2.png"></JESSICABILD>
       <P>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Eu sem integer vitae
@@ -54,6 +63,5 @@ export const OmMig: React.VFC = () => (
     </div>
 
     {/* <img src="/img/jessica.png" alt="" /> */}
-    <JESSICABILD src="/img/jessica.png"></JESSICABILD>
   </CONTENT>
 );

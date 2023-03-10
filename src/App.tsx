@@ -76,6 +76,12 @@ const ContentContainer = styled('div', {
   maxWidth: '60%',
   marginLeft: 'auto',
   marginRight: 'auto',
+  '@bp4': {
+    maxWidth: '70%',
+  },
+  '@bp3': {
+    maxWidth: '75%',
+  },
 });
 
 const Footer = styled('footer', {
