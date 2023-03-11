@@ -43,7 +43,7 @@ const TjanstImgLeft = styled('img', {
 const TjanstImgRight = styled('img', {
   margin: '2%',
   float: 'right',
-  width: '12%',
+  width: '13%',
 
   '@bp3': {
     width: '15%',
