@@ -88,6 +88,6 @@ export const globalCss = createGlobalCss({
   },
   '#root': {
     minHeight: '100%',
-    backgroundColor: '$pageBackground',
+    // backgroundColor: 'white',
   },
 });

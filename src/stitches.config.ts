@@ -9,7 +9,7 @@ export const stitchesConfig = createCss({
   },
   theme: {
     colors: {
-      pageBackground: 'rgb(240,240,240)', // bakgrundsfärg
+      pageBackground: '#FFFFFF', // bakgrundsfärg
       backgroundContrast: 'rgb(216,216,216)',
       highContrast: 'rgb(0,0,0)', //text
       lowContrast: '#c8def4',
