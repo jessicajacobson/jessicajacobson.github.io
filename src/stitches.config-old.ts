@@ -3,7 +3,7 @@ import { createCss, StitchesCss } from '@stitches/react';
 export const stitchesConfig = createCss({
   theme: {
     colors: {
-      pageBackground: 'rgb(240,240,240)',
+      pageBackground: 'white',
       backgroundContrast: 'rgb(216,216,216)',
       highContrast: 'rgb(0,0,0)',
       lowContrast: 'rgb(128,128,128)',
